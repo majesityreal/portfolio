@@ -88,9 +88,18 @@ h1, h2, h3, h4, h5, h6 {
   text-align-last: center;
   font-family: "Poppins", sans-serif;
 }
-#header .profile h1 a, #header .profile h1 a:hover {
+#header .profile h1 a {
   color: #fff;
   text-decoration: none;
+}
+#header .profile h1 a:hover {
+  color: rgb(218, 20, 20);
+  text-decoration: none;
+}
+#header .profile h3 {
+  font-size: 18px;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
 }
 #header .profile .social-links a {
   font-size: 18px;
@@ -222,18 +231,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+
+}
+#hero h1 .typed {
+  border-bottom: 3px solid #149ddd;
 }
 #hero p {
-  color: #fff;
-  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+  margin: 15px 0 50px 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
-}
-#hero p span {
-  color: #fff;
-  padding-bottom: 4px;
-  letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -365,10 +373,60 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
+.skills .navigate {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+}
+.skills .navigate a:active{
+  color: #495057;
+  background-color: #fff;
+  border-top-color: rgb(222, 226, 230);
+  border-right-color: rgb(222, 226, 230);
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(222, 226, 230);
+}
+.skills .navigate a:hover{
+  color: #495057;
+  background-color: #fff;
+  border-top-color: rgb(222, 226, 230);
+  border-right-color: rgb(222, 226, 230);
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(222, 226, 230);
+}
+.skills .navigate a {
+  color: #149ddd;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  flex-grow: 1;
+    text-align: center;
+    
+}
+.row.skills-content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.col-lg-6 {
+  padding: 0px;
+}
+.col-lg-6.left .progress {
+  margin: 0 5% 0 15%;
+}
+.col-lg-6.right .progress {
+  margin: 0 15% 0 5%;
+}
 .skills .progress {
+  align-self: center;
   height: 60px;
+  margin: 0;
+  max-width: 480px;
   display: block;
   background: none;
   border-radius: 0;
@@ -388,13 +446,13 @@ section {
 }
 .skills .progress-bar-wrap {
   background: #dce8f8;
-  height: 10px;
+  height: 15px;
 }
 .skills .progress-bar {
-  width: 1px;
-  height: 10px;
+  width: 2px;
+  height: 15px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: hsl(199, 83%, 47%);
 }
 
 /*--------------------------------------------------------------
