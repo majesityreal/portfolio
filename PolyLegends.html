@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Carson Anderson portfolio - Super Craft Bros</title>
+  <title>Carson Anderson portfolio - Poly Legends</title>
   <meta content="" name="description">
-  <meta content="Super Craft Bros, Minecraft, Spigot plugin, Minecraft server" name="keywords">
+  <meta content="Unity, Minigame, Game Development, Game developer, Game Jam, ScoreSpace game jam, Indie developer" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -37,13 +37,16 @@
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
   <!-- ======= Header ======= -->
-    <div id="nav-placeholder">
+    <!-- <div id="nav-placeholder">
     </div>
     <script>
     $(function(){
       $("#nav-placeholder").load("sidebar.html");
     });
-    </script>
+    </script> -->
+
+<script id="replace_with_navbar" src="nav.js"></script>
+
   <!-- End Header -->
 
   <main id="main">
@@ -53,10 +56,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Super Craft Bros</h2>
+          <h2>Poly Legends!</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Super Craft Bros</li>
+            <li>PolyLegends</li>
           </ol>
         </div>
 
@@ -73,20 +76,14 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
+
+
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/scb/lobby.png" alt="Super Craft Bros Lobby">
+                  <img src="assets/img/portfolio/poly-legends/titlescreen.PNG" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/scb/map1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/scb/coding-example.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/scb/map2.png" alt="">
+                  <img src="assets/img/portfolio/poly-legends/ingame.PNG" alt="">
                 </div>
 
               </div>
@@ -98,25 +95,27 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Game Design</li>
-                <li><strong>Project date</strong>: March 2020 - June 2020</li>
-                <li><strong>Summary</strong>: Fun minigame that brings Super Smash Bros. to Minecraft! 27 playable characters with 12 unique maps. 10,000+ lines of code</li>
+                <li><strong>Genre</strong>: 3D Arcade Game</li>
+                <li><strong>Engine</strong>: Unity, C#</li>
+                <li><strong>Team Size</strong>: Personal Project</li>
+                <li><strong>Project date</strong>: January 2020</li>
+                <li><strong>Summary</strong>: My first Unity project, made to learn everything from NavMeshes to ScriptableObjects</li>
 
               </ul>
-            </div>
-            <div class="banner">
-              <img src="assets/img/portfolio/scb/banner2.png" alt="">
             </div>
           </div>
 
           <div class="portfolio-description">
-            <h2>Super Craft Bros - custom plugin for Minecraft servers</h2>
+            <h2>PolyLegends - a learning experience!</h2>
             <p>
-              This project started over quarantine when I wanted to play Minecraft with my friends. I set up my own server and realized that I could create custom plugins for the server, which modify server side game mechanics. Me and my friends play a lot of Super Smash Bros Brawl, and I wanted to bring that experience to Minecraft. So, I started to teach myself how to code plugins using the Spigot API (Most Minecraft servers run on Spigot). This was an amazing experience that taught me a lot about programming practices, project development, and Java.
-            </p>
+              Survive an endless wave of skeleton attackers! This was my first Unity game and a great learning experience! This really ignited my passion for game development. I spent many days over my winter break watching Unity tutorials just absorbing information. I was like a child presented with a huge room full of toys. 
+              </p>
             <p>
-              The game has 27 playable characters each with unique abilities and attacks with 12 maps to play on. Each character is based on something related to Minecraft, such as an entity or an item in the game. Each player gets 5 lives and the last man standing wins. Random items spawn on the map that can give potentially deadly powers. Each character gets a double jump which provides an interesting twist on traditional pvp mechanics.
-            </p>
+              The player can toggle between three weapons: the shortsword, longsword, and bow. The shortsword has faster attacking but lower damage, whereas the longsword has a slower attack speed but higher range and damage. The bow fires arrows from a range. The scene resets when the player runs out of health.
+              </p>
+              <p>
+                I implemented a nav mesh for the skeleton to move towards the player. Every skeleton has a health bar which always points towards the camera.
+              </p>
           </div>
 
         </div>
